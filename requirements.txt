@@ -1,0 +1,13 @@
+streamlit
+tweepy 
+joblib 
+pandas 
+numpy 
+scikit-learn 
+yfinance 
+vaderSentiment 
+matplotlib
+python-dotenv
+seaborn
+imbalanced-learn
+google-cloud-storage
