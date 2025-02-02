@@ -67,10 +67,10 @@ This project is **deployed on Google Cloud Run** using **Cloud Storage** for mod
 │   ├── model_train.py      # Train & save ML model
 │── README.md               # Documentation
 │── requirements.txt        # Python dependencies
-│── .env       # secret keys
-│── .gitignore       # ignore uploading some files
-│── app.yaml       # information for google cloud
-│── Procfile       # Procfile for google cloud
+│── .env       # Secret keys
+│── .gitignore       # Ignore uploading some files
+│── app.yaml       # Defines Cloud Run environment & entrypoint
+│── Procfile       # Tells Google Buildpacks how to start Streamlit
 
 ```
 ## 📥 Installation
