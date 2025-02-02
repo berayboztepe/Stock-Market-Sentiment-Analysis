@@ -49,6 +49,7 @@ This project is **deployed on Google Cloud Run** using **Cloud Storage** for mod
 
 ## 📂 Project Structure
 
+```
 📁 Stock-Market-Sentiment-Analysis
 │── 📁 data
 │   ├── final_stock_sentiment.csv   # Final processed dataset
@@ -71,21 +72,22 @@ This project is **deployed on Google Cloud Run** using **Cloud Storage** for mod
 │── app.yaml       # information for google cloud
 │── Procfile       # Procfile for google cloud
 
-# 📥 Installation
-## 🔹 **Step 1: Clone the Repository**
+```
+## 📥 Installation
+### 🔹 **Step 1: Clone the Repository**
 
 ```bash
 git clone https://github.com/your-username/Stock-Market-Sentiment-Analysis.git
 cd Stock-Market-Sentiment-Analysis
 ```
 
-### **Step 2: Setup Environment Variables**
+### 🔹 **Step 2: Setup Environment Variables**
 Create a `.env` file in the root directory:
 ```ini
 TWITTER_BEARER_TOKEN=xxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-## 🔹 **Step 3: Create & Activate Virtual Environment**
+### 🔹 **Step 3: Create & Activate Virtual Environment**
 
 ```bash
 python -m venv venv
@@ -93,21 +95,25 @@ source venv/bin/activate  # Mac/Linux
 venv\Scripts\activate     # Windows
 ```
 
-## 🔹 **Step 4: Install Dependencies**
+### 🔹 **Step 4: Install Dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-# 🛠 Data Processing
-## **Fetch & Preprocess Data**
+## 🛠 Data Processing
+### **Fetch & Preprocess Data**
 
-Run the scripts in the notebooks folder to: ✅ Fetch stock data 📈
+Run the scripts in the notebooks folder to: 
+
+✅ Fetch stock data 📈
+
 ✅ Collect Twitter sentiment data 🐦
+
 ✅ Merge & clean dataset
 
-# 🤖 Train Model
-## **Train a RandomForestClassifier on stock movement vs. sentiment:**
+## 🤖 Train Model
+### **Train a RandomForestClassifier on stock movement vs. sentiment:**
 
 ```bash
 python src/model_train.py
@@ -115,8 +121,8 @@ python src/model_train.py
 
 After training, it saves the model in **models/best_stock_sentiment_model.pkl**.
 
-# 🌍 Run Streamlit Web App
-## Launch the **interactive web app** to predict stock movement from tweets:
+## 🌍 Run Streamlit Web App
+### Launch the **interactive web app** to predict stock movement from tweets:
 
 ```bash
 streamlit run app/app.py
@@ -124,11 +130,12 @@ streamlit run app/app.py
 
 📌 **Usage:** Enter a stock-related tweet → Get sentiment & stock movement prediction!
 
-# 📊 Model Performance
+## 📊 Model Performance
 
 Model: **RandomForestClassifier**
 Features: Sentiment Score, Price Volatility, Tweet Count
 **SMOTE applied** to balance training data
+
 Accuracy: 📈 **50%**
 
 The model achieved an accuracy of 50%, which is relatively low. This is primarily due to the limited amount of training data available.
@@ -143,7 +150,7 @@ The model achieved an accuracy of 50%, which is relatively low. This is primaril
 
 * This improved the model's accuracy to 50%, but it’s still limited by the overall dataset size.
 
-# 📌 Technologies Used
+## 📌 Technologies Used
 ✅ Python
 
 ✅ scikit-learn - Machine Learning
